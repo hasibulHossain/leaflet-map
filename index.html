@@ -13,15 +13,22 @@
 </head>
 
 <body>
-    <h1>Leaflet Map</h1>
-    <div class="map-container">
-        <div id="map"></div>
+    <div class="d-flex">
+        <div class="flex-left">
+            <h1>Division List</h1>
+            <ul class="division-list">
+            </ul>
+        </div>
+        <div class="flex-right">
+            <div id="map"></div>
+        </div>
     </div>
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
+    <script src="./list.js"></script>
     <script src="./app.js"></script>
 </body>
 
