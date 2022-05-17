@@ -68,3 +68,22 @@ h1 {
 .popup-card {
     font-size: 1.4rem;
 }
+
+
+/* responsive  */
+
+@media only screen and (max-width: 700px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .flex-left {
+        height: 50vh;
+        min-height: 50vh;
+        overflow-y: scroll;
+    }
+
+    #map {
+        min-height: 50vh;
+    }
+}

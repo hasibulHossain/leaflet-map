@@ -90,7 +90,7 @@ function flyToExactLatlng(division) {
     });
 
     setTimeout(() => {
-        L.popup({ closeButton: false, offset: L.point(0, -10) })
+        L.popup({ closeButton: false, offset: L.point(0, -10), maxWidth: 200 })
             .setLatLng([lng, lat])
             .setContent(createPopup(division))
             .openOn(map);
